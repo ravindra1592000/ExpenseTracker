@@ -1,0 +1,12 @@
+.month_style{
+	width: 8.33%;
+	text-align: center;
+	/* border: 2px solid red; */
+}
+.container{
+	width: 10px;
+	height: 100px;
+	border:2px solid green;
+	display: inline-block;
+	
+}
