@@ -7,13 +7,12 @@ import ExpenseDate from '../Expenses/ExpenseDate';
 const NewExpense = (props) => {
 	 const [check, setCheck] = useState(false);
 	const onSaveFormHandler = (expenseData) => {
-		const newExpenseData = { ...expenseData, id: Math.random().toString() }
-		// console.log(newExpenseData);
+    // const newExpenseData = { ...expenseData, id: Math.random().toString() }
+    // console.log(newExpenseData);
 
-		props.onAdditem(newExpenseData);
-		setCheck(false);
-		
-	}
+    props.onAdditem(expenseData);
+    setCheck(false);
+  }
 
 
   const handleNewItemAddition = () => {

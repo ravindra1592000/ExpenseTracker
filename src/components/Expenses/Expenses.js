@@ -13,14 +13,20 @@ function Expenses(props) {
     // console.log("selectedYear :" );
     // console.log(selectedYear);
     // filtered = true;
+    console.log("filter changeHandler will run");
     setFilteredYear(() => {
       return selectedYear;
     });
   };
 
   const FilterYearItems = props.items.filter((current) => {
+    // console.log("in expenses");
+    // console.log(current.date);
+    console.log("filter year items will run");
+    console.log(current.date.getFullYear().toString());
     return current.date.getFullYear().toString() === filteredYear;
   });
+  console.log(FilterYearItems);
 
   // this way we can prefer the conditional rendering because this way jsx code is clean.
 
